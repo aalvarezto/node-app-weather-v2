@@ -12,6 +12,19 @@ En este caso utilicé un patrón de composición asíncrona `composeAsync()` par
 
 ## Installation guide
 
+0. **Quick Script (bash)**
+
+    ### After this script go to **step **4 and place your api keys in the `.env` file.
+
+    ```bash
+    	git clone https://github.com/aalvarezto/node-app-weather-v2.git
+    	cd node-app-weather-v2
+    	echo $'MAPBOX_KEY=\nOPENWEATHER_KEY=' > .env
+    	npm install
+    	code .
+
+    ```
+
 1. **Clone** repo and go to the project folder
 
     ```bash
@@ -44,7 +57,7 @@ En este caso utilicé un patrón de composición asíncrona `composeAsync()` par
 
 4. Create an account for **MapBox** ([_link here_](https://www.mapbox.com)) **OpenWeather** ([_link here_](https://openweathermap.org)), read the instructions from the documentation and and create your own api keys for both services.
 
-5. Inside the `.env` paste your api keys for the **MapBox** and **OpenWeather** services.
+5. Inside the `.env` file paste your api keys for the **MapBox** and **OpenWeather** services.
 
     ```
     	MAPBOX_KEY=YOUR_API_MAPBOX_KEY

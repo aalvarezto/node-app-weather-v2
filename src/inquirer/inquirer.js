@@ -2,9 +2,9 @@
 
 import colors from "colors"
 import inquirer from "inquirer"
-import { capFirst } from "../utils.js"
+import { capFirst, traceAsync } from "../utils.js"
 
-const { green } = colors
+const { green, blue, red, yellow } = colors
 
 const _createPrompt =
 	(...input) =>
@@ -38,8 +38,17 @@ const readInput = _createPrompt({
 	validate: ({ length }) => (length === 0 ? "Please input a value" : true),
 })
 
-const showPlaces = ([list, error]) =>
-	list[0]
+const showPlaces = async ([list, error]) =>
+	error
+		? await traceAsync()(`
+${red("Warning!!")}
+Make sure you provided the right api keys in the .env file for:
+		
+	${blue("MapBox")}
+
+	Link -> ${yellow("https://www.mapbox.com")}
+`)
+		: list[0]
 		? _createPrompt({
 				type: "list",
 				name: "city",
@@ -54,8 +63,17 @@ const showPlaces = ([list, error]) =>
 		  })()
 		: console.log("No city selected.")
 
-const displayCityInfo = async ([city]) =>
-	city
+const displayCityInfo = async ([city, error]) =>
+	error
+		? await traceAsync()(`
+${red("Warning!!")}
+Make sure you provided the right api keys in the .env file for:
+		
+	${blue("OpenWeather")}
+
+	Link -> ${yellow("https://openweathermap.org")}
+`)
+		: city
 		? [
 				`\nCity Information\n`.green,
 				...Object.entries(city)

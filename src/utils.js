@@ -40,14 +40,16 @@ const peek = x => {
 	return x
 }
 
-const traceAsync = lable => async x => {
-	console.log(lable)
+const traceAsync =
+	(lable = "") =>
+	async x => {
+		console.log(lable)
 
-	console.log(x)
+		console.log(x)
 
-	await pause()
+		await pause()
 
-	return x
-}
+		return x
+	}
 
 export { spinnerTryCatch, composeAsync, peek, capFirst, traceAsync }
