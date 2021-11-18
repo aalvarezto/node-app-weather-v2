@@ -2,7 +2,7 @@
 
 Hola, acá les comparto este repo, sin dar muchas vueltas es una app de clima que utilicé para practicar conceptos de programación funcional.
 
-Es una app inspirada en un ejemplo de el curso: [Node de cero a experto](https://www.udemy.com/course/node-de-cero-a-experto/) de Fernando Herrera. Las modificaciones son todas
+Es una app inspirada en un ejemplo de el curso: [Node de cero a experto](https://www.udemy.com/course/node-de-cero-a-experto/) de Fernando Herrera. El proyecto original del curso estaba hecho con el paradigma de OOP (orientado a objetos), el código de este repo está todo hecho bajo el paradigma de FP (programación funcional).
 
 En este caso utilicé un patrón de composición asíncrona `composeAsync()` para secuenciar los distintos pasos de la app.
 
@@ -11,24 +11,24 @@ En este caso utilicé un patrón de composición asíncrona `composeAsync()` par
 1. **Clone** repo and go to the project folder
 
     ```bash
-    	git clone git@github.com:aalvarezto/node-app-weather-v2.git
-    	cd node-app-weather-v2
+    	$ git clone git@github.com:aalvarezto/node-app-weather-v2.git
+    	$ cd node-app-weather-v2
     ```
 
 2. **Install** dependencies
 
     ```bash
-    	npm install
+    	$ npm install
 
     	or
 
-    	yarn
+    	$ yarn
     ```
 
 3. **Create** `.env` file
 
     ```bash
-    	touch .env
+    	$ touch .env
     ```
 
 4. Create an account for **MapBox** ([_link here_](https://www.mapbox.com)) **OpenWeather** ([_link here_](https://openweathermap.org)), read the instructions from the documentation and and create your own api keys for both services.
@@ -43,11 +43,15 @@ En este caso utilicé un patrón de composición asíncrona `composeAsync()` par
 6. Run the **app** with:
 
     ```bash
-    	node index.js
+    	$ node index.js
+
     	or
-    	npm run start
+
+    	$ npm run start
+
     	or
-    	yarn start
+
+    	$ yarn start
     ```
 
 7. Have fun 😁
