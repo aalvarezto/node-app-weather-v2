@@ -6,12 +6,23 @@ Es una app inspirada en un ejemplo de el curso: [Node de cero a experto](https:/
 
 En este caso utilicé un patrón de composición asíncrona `composeAsync()` para secuenciar los distintos pasos de la app.
 
+## Requirements
+
+-   Node 15.3.0 or higher
+
 ## Installation guide
 
 1. **Clone** repo and go to the project folder
 
     ```bash
+    	via ssh
+
     	$ git clone git@github.com:aalvarezto/node-app-weather-v2.git
+    	$ cd node-app-weather-v2
+
+    	via https
+
+    	$ git clone https://github.com/aalvarezto/node-app-weather-v2.git
     	$ cd node-app-weather-v2
     ```
 
