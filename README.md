@@ -12,73 +12,75 @@ En este caso utilicé un patrón de composición asíncrona `composeAsync()` par
 
 ## Installation guide
 
-0. **Quick Script (bash)**
+### 0. **Quick Script (bash)**
 
-    ### After this script go to **step** 4 and place your api keys in the `.env` file.
+#### After this script go to [**step 4**](https://github.com/aalvarezto/node-app-weather-v2#4.-create-api-keys) and place your api keys in the `.env` file.
 
-    ```bash
-    	git clone https://github.com/aalvarezto/node-app-weather-v2.git
-    	cd node-app-weather-v2
-    	echo $'MAPBOX_KEY=\nOPENWEATHER_KEY=' > .env
-    	npm install
-    	code .
+```bash
+	git clone https://github.com/aalvarezto/node-app-weather-v2.git
+	cd node-app-weather-v2
+	echo $'MAPBOX_KEY=\nOPENWEATHER_KEY=' > .env
+	npm install
+	code .
 
-    ```
+```
 
-1. **Clone** repo and go to the project folder
+### 1. **Clone** repo and go to the project folder
 
-    ```bash
-    	via ssh
+```bash
+	via ssh
 
-    	$ git clone git@github.com:aalvarezto/node-app-weather-v2.git
-    	$ cd node-app-weather-v2
+	$ git clone git@github.com:aalvarezto/node-app-weather-v2.git
+	$ cd node-app-weather-v2
 
-    	via https
+	via https
 
-    	$ git clone https://github.com/aalvarezto/node-app-weather-v2.git
-    	$ cd node-app-weather-v2
-    ```
+	$ git clone https://github.com/aalvarezto/node-app-weather-v2.git
+	$ cd node-app-weather-v2
+```
 
-2. **Install** dependencies
+### 2. **Install** dependencies
 
-    ```bash
-    	$ npm install
+```bash
+	$ npm install
 
-    	or
+	or
 
-    	$ yarn
-    ```
+	$ yarn
+```
 
-3. **Create** `.env` file
+### 3. **Create** `.env` file
 
-    ```bash
-    	$ touch .env
-    ```
+```bash
+	$ touch .env
+```
 
-4. Create an account for **MapBox** ([_link here_](https://www.mapbox.com)) **OpenWeather** ([_link here_](https://openweathermap.org)), read the instructions from the documentation and and create your own api keys for both services.
+### 4. **Create** Api Keys
 
-5. Inside the `.env` file paste your api keys for the **MapBox** and **OpenWeather** services.
+Create an account for **MapBox** ([_link here_](https://www.mapbox.com)) **OpenWeather** ([_link here_](https://openweathermap.org)), read the instructions from the documentation and and create your own api keys for both services.
 
-    ```
-    	MAPBOX_KEY=YOUR_API_MAPBOX_KEY
-    	OPENWEATHER_KEY=YOUR_OPENWEATHER_API_KEY
-    ```
+### 5. Inside the `.env` file paste your api keys for the **MapBox** and **OpenWeather** services.
 
-6. Run the **app** with:
+```
+	MAPBOX_KEY=YOUR_API_MAPBOX_KEY
+	OPENWEATHER_KEY=YOUR_OPENWEATHER_API_KEY
+```
 
-    ```bash
-    	$ node index.js
+### 6. Run the **app** with:
 
-    	or
+```bash
+	$ node index.js
 
-    	$ npm run start
+	or
 
-    	or
+	$ npm run start
 
-    	$ yarn start
-    ```
+	or
 
-7. Have fun 😁
+	$ yarn start
+```
+
+### 7. Have fun 😁
 
 ## Links and resources
 
