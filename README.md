@@ -14,7 +14,7 @@ En este caso utilicé un patrón de composición asíncrona `composeAsync()` par
 
 ### 0. **Quick Script (bash)**
 
-#### After this script go to [**step 4**](https://github.com/aalvarezto/node-app-weather-v2#4.-create-api-keys) and place your api keys in the `.env` file.
+#### After this script go to [**step 4**](https://github.com/aalvarezto/node-app-weather-v2#4-create-api-keys) and place your api keys in the `.env` file.
 
 ```bash
 	git clone https://github.com/aalvarezto/node-app-weather-v2.git
