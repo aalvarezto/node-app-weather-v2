@@ -1,11 +1,11 @@
 "use strict"
 
 import {
-	displayCityInfo,
 	displaySelect,
-	inquirerMenu,
+	askOptions,
 	pause,
 	readInput,
+	displayCityInfo,
 	showPlaces,
 } from "./src/inquirer/inquirer.js"
 import { getHistory, saveData } from "./src/model.js"
@@ -21,7 +21,7 @@ const main = async () => {
 		console.clear()
 		displaySelect()
 
-		opt = await inquirerMenu()
+		opt = await askOptions()
 
 		opt =
 			opt === 1
