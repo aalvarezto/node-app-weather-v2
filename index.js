@@ -31,7 +31,7 @@ const main = async () => {
 						getWeather,
 						showPlaces,
 						requestCitys,
-						// traceAsync,
+						// traceAsync("estoy después de readInput()"),
 						readInput
 				  )()
 				: opt === 2
